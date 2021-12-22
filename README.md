@@ -1,5 +1,7 @@
 # pokeclick
 
+https://djkean.github.io/pokeclick/
+
 ## resources
 
 - https://pokeapi.co
