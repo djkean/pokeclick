@@ -34,3 +34,5 @@ these berries are used as currency for upgrades
 
 - first upgrade would just be generic automation, bought with mainly the most common berry from the 1st tree
 
+- rare chance of an "event" happening, similar concept to golden cookies from cookie clicker
+instead of a singular event, maybe roll every second for whether an event will happen or not, then roll for which one or something
