@@ -1,1 +1,83 @@
-pokeclick
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+    <title>pokeclick</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1>pokeclick</h1>
+
+    <p id="count">...</p>
+
+    <button id="click">Click</button>
+
+    <br/>
+
+    <button id="purchase">Purchase Item</button>
+
+    <script>
+        const countElm = document.getElementById("count");
+        const clickElm = document.getElementById("click");
+        const purchaseElm = document.getElementById("purchase");
+
+        /**
+         * returns the count from localStorage,
+         * if the count has not been set yet, return 0
+         */
+        function getCount() {
+            const count = localStorage.getItem("count");
+
+            if (count === null) {
+                return 0;
+            } else {
+                return Number(count);
+            }
+        }
+
+        let count = getCount()
+
+        /**
+         * updates the count within localStorage
+         * so when the user refreshes their page,
+         * the count remains the same
+         */
+        function saveCount() {
+            localStorage.setItem("count", count);
+        }
+
+        /**
+         * updates the count element on the page
+         * with the current count
+         */
+        function updateCountElm() {
+            countElm.innerText = count;
+        }
+
+        /**
+         * adds a certain amount to the count, and ensures
+         * the page is updated with the new count, and also
+         * saves the new count to localStorage
+         */
+        function incrementCount(amount) {
+            count = count + amount;
+            updateCountElm();
+            saveCount();
+        }
+
+        updateCountElm();
+
+        clickElm.addEventListener("click", () => {
+            incrementCount(1);
+        });
+
+        purchaseElm.addEventListener("click", () => {
+            console.log('purchase!')
+        });
+    </script>
+</body>
+
+</html>
