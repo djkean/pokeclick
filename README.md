@@ -6,6 +6,8 @@ https://djkean.github.io/pokeclick/
 
 - https://pokeapi.co
 
+- This project is WIP, an idea I'd love to build sometime in the future.
+
 # thoughts 
 
 berry clicker idea(s)
