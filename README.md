@@ -2,11 +2,11 @@
 
 https://djkean.github.io/pokeclick/
 
+- This project is WIP, an idea I'd love to build sometime in the future.
+
 ## resources
 
 - https://pokeapi.co
-
-- This project is WIP, an idea I'd love to build sometime in the future.
 
 # thoughts 
 
